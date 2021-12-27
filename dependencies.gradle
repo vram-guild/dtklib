@@ -1,0 +1,7 @@
+repositories {
+	jcenter();
+}
+
+dependencies {
+	 compileOnly "it.unimi.dsi:fastutil:8.5.6"
+}
