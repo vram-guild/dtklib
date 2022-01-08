@@ -22,11 +22,11 @@ package io.vram.dtk;
 
 public class PackedPoint2i {
 	public static int getX(long packed) {
-		return (int) (packed & 0xFFFF);
+		return (int) (packed & 0xFFFFFFFFL);
 	}
 
 	public static int getY(long packed) {
-		return (int) ((packed >>> 32) & 0xFFFF);
+		return (int) ((packed >>> 32) & 0xFFFFFFFFL);
 	}
 
 	public static long pack(int x, int y) {
