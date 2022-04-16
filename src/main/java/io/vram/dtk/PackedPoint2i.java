@@ -30,6 +30,6 @@ public class PackedPoint2i {
 	}
 
 	public static long pack(int x, int y) {
-		return x | (((long) y) << 32);
+		return (x & 0xFFFFFFFFL) | (((long) y) << 32);
 	}
 }
