@@ -37,7 +37,7 @@ public class CircleUtil {
 
 	public static final int DISTANCE_SORTED_CIRCULAR_OFFSETS_COUNT;
 
-	public static record Offset(int x, int y, int dist) { }
+	public record Offset(int x, int y, int dist) { }
 
 	static {
 		// need to use a hash bc fill2dCircleInPlaneXZ does not guarantee uniqueness.
